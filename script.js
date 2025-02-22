@@ -1,6 +1,6 @@
 async function fetchISTTime() {
     const apiKey = 'YOF38Z48VZ5H'; // Replace with your TimeZoneDB API key
-    const apiUrl = `http://api.timezonedb.com/v2.1/get-time-zone?key=${apiKey}&format=json&by=zone&zone=Asia/Kolkata`;
+    const apiUrl = `https://api.timezonedb.com/v2.1/get-time-zone?key=${apiKey}&format=json&by=zone&zone=Asia/Kolkata`;
 
     try {
         const response = await fetch(apiUrl);
