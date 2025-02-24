@@ -15,8 +15,10 @@
         <img src="/images/logo.png" alt="Logo" />
       </div>
       <div class="nav-top">
-        <a href="#">HOME</a>
-        <a id="contact-link" href="javascript:void(0);" onclick="openPopup()">CONTACT US</a>
+        <a href="index.html">HOME</a>
+        <a id="contact-link" href="javascript:void(0);" onclick="openPopup()"
+          >CONTACT US</a
+        >
         <a href="#">HELP & SUPPORT</a>
         <span id="date-time"></span>
       </div>
@@ -48,10 +50,10 @@
     <div id="contact-popup" class="popup-container">
       <div class="popup-content">
         <div class="popup-header">
-            <span>You may contact us</span>
-            <button class="close-btn" onclick="closePopup()">×</button>
+          <span>You may contact us</span>
+          <button class="close-btn" onclick="closePopup()">×</button>
         </div>
-        
+
         <div class="popup-body">
           <h3>For Railway tickets booked through IRCTC</h3>
           <p>
@@ -85,6 +87,170 @@
         </div>
       </div>
     </div>
+
+    <!-- Book Ticket Section -->
+
+    <!-- <section class="booking-section">
+      <div class="grid-section">
+        <div class="book-ticket">
+          <h1>BOOK TICKET</h1>
+          <form>
+            <div class="from-to">
+              <label for="From">From</label>
+              <input type="text" id="from" name="from" />
+              <img
+                src="images/exchange.png"
+                alt="double sided arrow"
+                height="10px"
+              />
+              <label for="To">To</label>
+              <input type="text" id="to" name="to" /><br />
+            </div>
+
+            <div class="class-quota">
+              <select name="class" id="class">
+                <option value="All Classes">All Classes</option>
+                <option value="AC First Class (1A)">AC First Class (1A)</option>
+                <option value="AC 2 Tier (2A)">AC 2 Tier (2A)</option>
+                <option value="AC 3 Tier (3A)">AC 3 Tier (3A)</option>
+                <option value="AC 3 Economy (3E)">AC 3 Economy (3E)</option>
+                <option value="Sleeper (SL)">Sleeper (SL)</option>
+                <option value="Second Sitting (2S)">Second Sitting (2S)</option>
+              </select>
+  
+              <select name="quota" id="quota">
+                <option value="General">General</option>
+                <option value="Ladies">Ladies</option>
+                <option value="Tatkal">Tatkal</option>
+                <option value="Person with Disability">
+                  Person with Disability
+                </option>
+                <option value="Duty Pass">Duty Pass</option>
+                <option value="Lower Berth/ Sr. Citizen">
+                  Lower Berth/ Sr. Citizen
+                </option>
+              </select>
+            </div>
+            <input type="”date”" />
+            <div class="checkboxes">
+              <input
+              type="checkbox"
+              id="disability"
+              name="disability"
+              value="disability"
+            />
+            <label for="disability">Person with Disability Concession</label
+            ><br />
+            <input type="checkbox" id="date" name="date" value="date" />
+            <label for="date">Flexible With Date</label><br />
+            <input type="checkbox" id="berth" name="berth" value="berth" />
+            <label for="berth">Train with Available Berth</label>
+            <input
+              type="checkbox"
+              id="concession"
+              name="concession"
+              value="concession"
+            />
+            <label for="concession">Railway Pass Concession</label>
+            </div>
+            <input class="search" type="submit" value="Search" />
+          </form>
+        </div>
+      </div>
+    </section> -->
+
+    <section class="booking-section">
+      <div class="grid-section">
+        <div class="book-ticket">
+          <h1>BOOK TICKET</h1>
+          <form>
+            <!-- From and To Fields with Swapping -->
+            <div class="from-to">
+              <div class="input-container">
+                <input
+                  type="text"
+                  id="from"
+                  name="from"
+                  placeholder=" "
+                  required
+                />
+                <label for="from">From</label>
+              </div>
+              <span class="swap-arrow" onclick="swapValues()">⇅</span>
+
+              <div class="input-container">
+                <input type="text" id="to" name="to" placeholder=" " required />
+                <label for="to">To</label>
+              </div>
+            </div>
+
+            <!-- Class and Quota Fields -->
+            <div class="class-quota">
+              <select name="class" id="class">
+                <option value="All Classes">All Classes</option>
+                <option value="AC First Class (1A)">AC First Class (1A)</option>
+                <option value="AC 2 Tier (2A)">AC 2 Tier (2A)</option>
+                <option value="AC 3 Tier (3A)">AC 3 Tier (3A)</option>
+                <option value="AC 3 Economy (3E)">AC 3 Economy (3E)</option>
+                <option value="Sleeper (SL)">Sleeper (SL)</option>
+                <option value="Second Sitting (2S)">Second Sitting (2S)</option>
+              </select>
+
+              <select name="quota" id="quota">
+                <option value="General">General</option>
+                <option value="Ladies">Ladies</option>
+                <option value="Tatkal">Tatkal</option>
+                <option value="Person with Disability">
+                  Person with Disability
+                </option>
+                <option value="Duty Pass">Duty Pass</option>
+                <option value="Lower Berth/ Sr. Citizen">
+                  Lower Berth/ Sr. Citizen
+                </option>
+              </select>
+            </div>
+
+            <!-- Calendar Input -->
+            <input type="date" id="travel-date" class="date-picker" required />
+
+            <!-- Checkboxes -->
+            <div class="checkboxes">
+              <div>
+                <input
+                  type="checkbox"
+                  id="disability"
+                  name="disability"
+                  value="disability"
+                />
+                <label for="disability"
+                  >Person with Disability Concession</label
+                >
+              </div>
+              <div>
+                <input type="checkbox" id="date" name="date" value="date" />
+                <label for="date">Flexible With Date</label>
+              </div>
+              <div>
+                <input type="checkbox" id="berth" name="berth" value="berth" />
+                <label for="berth">Train with Available Berth</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="concession"
+                  name="concession"
+                  value="concession"
+                />
+                <label for="concession">Railway Pass Concession</label>
+              </div>
+            </div>
+
+            <!-- Search Button -->
+            <input class="search" type="submit" value="Search" />
+          </form>
+        </div>
+      </div>
+    </section>
 
     <script src="script.js"></script>
   </body>
