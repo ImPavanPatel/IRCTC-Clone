@@ -1,3 +1,6 @@
+<?php
+// IRCTC
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
