@@ -273,61 +273,13 @@ body {
   text-decoration: underline;
 }
 
-/* Booking section */
-/* .booking-section {
-  background: url(images/vande-bharat.jpg) center/cover no-repeat;
-  padding: 50px 0;
-  height: 600px;
-  text-align: center;
-}
-
-.grid-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-inline: 70px;
-}
-
-.book-ticket {
-    grid-column: 1;
-    background-color: white;
-    width: 100%;
-    padding: 0 60px;
-}
-
-.book-ticket h1 {
-    font-size: 30px;
-    color: #213d77;
-    font-weight: 700;
-    margin-block: 30px;
-}
-
-.from-to {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-}
-
-.class-quota {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.search {
-    text-align: center;
-    background: #fb792b !important;
-    color: #fff !important;
-    border-color: #fb792b;
-    border-radius: 8%;
-    font-size: 1.4rem;
-    padding: 8px 14px;
-    font-size: 15px;
-} */
-
 /* Booking Section */
 .booking-section {
   background: url(images/vande-bharat.jpg) center/cover no-repeat;
   padding: 60px 0;
   height: 650px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .grid-section {
@@ -495,4 +447,72 @@ select#quota, select#class {
   padding: 8px 14px;
   font-size: 15px;
   margin-bottom: 30px;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  background-color: #d3d3d3;
+}
+
+/* Services section */
+
+.services {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 2px;
+
+}
+
+.services h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 30px;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.service-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.service-circle i {
+  font-size: 36px;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.service-circle:hover {
+  background-color: #213d77;
+  border-color: #213d77;
+}
+
+.service-circle:hover i {
+  color: white;
+}
+
+.service-text {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  color: black;
 }

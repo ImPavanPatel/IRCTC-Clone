@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RTBS</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -89,75 +94,6 @@
     </div>
 
     <!-- Book Ticket Section -->
-
-    <!-- <section class="booking-section">
-      <div class="grid-section">
-        <div class="book-ticket">
-          <h1>BOOK TICKET</h1>
-          <form>
-            <div class="from-to">
-              <label for="From">From</label>
-              <input type="text" id="from" name="from" />
-              <img
-                src="images/exchange.png"
-                alt="double sided arrow"
-                height="10px"
-              />
-              <label for="To">To</label>
-              <input type="text" id="to" name="to" /><br />
-            </div>
-
-            <div class="class-quota">
-              <select name="class" id="class">
-                <option value="All Classes">All Classes</option>
-                <option value="AC First Class (1A)">AC First Class (1A)</option>
-                <option value="AC 2 Tier (2A)">AC 2 Tier (2A)</option>
-                <option value="AC 3 Tier (3A)">AC 3 Tier (3A)</option>
-                <option value="AC 3 Economy (3E)">AC 3 Economy (3E)</option>
-                <option value="Sleeper (SL)">Sleeper (SL)</option>
-                <option value="Second Sitting (2S)">Second Sitting (2S)</option>
-              </select>
-  
-              <select name="quota" id="quota">
-                <option value="General">General</option>
-                <option value="Ladies">Ladies</option>
-                <option value="Tatkal">Tatkal</option>
-                <option value="Person with Disability">
-                  Person with Disability
-                </option>
-                <option value="Duty Pass">Duty Pass</option>
-                <option value="Lower Berth/ Sr. Citizen">
-                  Lower Berth/ Sr. Citizen
-                </option>
-              </select>
-            </div>
-            <input type="”date”" />
-            <div class="checkboxes">
-              <input
-              type="checkbox"
-              id="disability"
-              name="disability"
-              value="disability"
-            />
-            <label for="disability">Person with Disability Concession</label
-            ><br />
-            <input type="checkbox" id="date" name="date" value="date" />
-            <label for="date">Flexible With Date</label><br />
-            <input type="checkbox" id="berth" name="berth" value="berth" />
-            <label for="berth">Train with Available Berth</label>
-            <input
-              type="checkbox"
-              id="concession"
-              name="concession"
-              value="concession"
-            />
-            <label for="concession">Railway Pass Concession</label>
-            </div>
-            <input class="search" type="submit" value="Search" />
-          </form>
-        </div>
-      </div>
-    </section> -->
 
     <section class="booking-section">
       <div class="grid-section">
@@ -251,6 +187,45 @@
         </div>
       </div>
     </section>
+
+    <hr>
+
+    <section class="services">
+      <h2>Find a service suitable for you here.</h2>
+      <div class="service-container">
+        <div class="service-item">
+          <div class="service-circle">
+            <i class="fa-solid fa-plane"></i>
+          </div>
+          <p class="service-text">FLIGHTS</p>
+        </div>
+        <div class="service-item">
+          <div class="service-circle">
+            <i class="fa-solid fa-bed"></i>
+          </div>
+          <p class="service-text">HOTELS</p>
+        </div>
+        <div class="service-item">
+          <div class="service-circle">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <p class="service-text">E-CATERING</p>
+        </div>
+        <div class="service-item">
+          <div class="service-circle">
+            <i class="fa-solid fa-bus"></i>
+          </div>
+          <p class="service-text">BUS</p>
+        </div>
+      </div>
+      <img
+        draggable="false"
+        src="images/attention.jpeg"
+        alt="Centered Image"
+        class="service-bottom-image"
+      />
+    </section>
+    <hr>
 
     <script src="script.js"></script>
   </body>
