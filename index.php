@@ -23,7 +23,7 @@
         <img src="/images/logo.png" alt="Logo" />
       </div>
       <div class="nav-top">
-        <a href="index.html">HOME</a>
+        <a href="index.php">HOME</a>
         <a id="contact-link" href="javascript:void(0);" onclick="openPopup()"
           >CONTACT US</a
         >
