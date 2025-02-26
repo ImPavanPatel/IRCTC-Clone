@@ -27,7 +27,7 @@
         <a id="contact-link" href="javascript:void(0);" onclick="openPopup()"
           >CONTACT US</a
         >
-        <a href="#">HELP & SUPPORT</a>
+        <a href="helpsupport.php">HELP & SUPPORT</a>
         <span id="date-time"></span>
       </div>
       <div class="nav-bottom">
