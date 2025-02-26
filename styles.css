@@ -520,6 +520,7 @@ hr {
   text-align: center;
   padding: 50px 100px;
   background-color: #f9f9f9;
+  padding-bottom: 70px;
 }
 
 .holidays h2 {
@@ -574,4 +575,41 @@ hr {
 
 .read-more-btn:hover {
   background-color: #172b5b;
+}
+
+/* Footer Section */
+
+.footer .box-container{
+  background-color: #2c215d;
+  color: #fff;
+  text-align: center;
+  padding-inline: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 30px;
+}
+
+.box-container {
+  padding-block: 50px;
+}
+
+.footer .box-container .box h3{
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+.footer .box-container .box a{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a i{
+  padding-right: .5rem;
+}
+
+.footer .box-container .box a:hover{
+  text-decoration: underline;
 }
