@@ -18,9 +18,9 @@
   <body>
     <!-- Header Section -->
 
-    <header class="header">
+    <header id="home" class="header">
       <div class="logo">
-        <img src="/images/logo.png" alt="Logo" />
+        <img src="images/logo.png" alt="Logo" />
       </div>
       <div class="nav-top">
         <a href="index.php">HOME</a>
@@ -98,7 +98,7 @@
 
     <!-- Book Ticket Section -->
 
-    <section class="booking-section">
+    <section id="booking" class="booking-section">
       <div class="grid-section">
         <div class="book-ticket">
           <h1>BOOK TICKET</h1>
@@ -193,7 +193,8 @@
 
     <hr>
 
-    <section class="services">
+    <!-- Services Section -->
+    <section id="services" class="services">
       <h2>Find a service suitable for you here.</h2>
       <div class="service-container">
         <div class="service-item">
@@ -232,7 +233,7 @@
 
     <!-- Holidays section -->
 
-    <section class="holidays">
+    <section id="holidays" class="holidays">
       <h2>HOLIDAYS</h2>
       <div class="holiday-grid">
         <!-- Card 1 -->
@@ -275,7 +276,7 @@
 
     <!-- Footer Section -->
 
-    <section class="footer">
+    <section id="footer" class="footer">
 
       <div class="box-container">
   
@@ -290,9 +291,9 @@
         <div class="box">
           <h3>Quick Links</h3>
           <a href="#home"><i class="fas fa-arrow-right"></i>Home</a>
-          <a href="#about"><i class="fas fa-arrow-right"></i>Booking</a>
-          <a href="#menu"><i class="fas fa-arrow-right"></i>Services</a>
-          <a href="#review"><i class="fas fa-arrow-right"></i>Holidays</a>
+          <a href="#booking"><i class="fas fa-arrow-right"></i>Booking</a>
+          <a href="#services"><i class="fas fa-arrow-right"></i>Services</a>
+          <a href="#holidays"><i class="fas fa-arrow-right"></i>Holidays</a>
         </div>
   
         <div class="box">
@@ -304,7 +305,7 @@
         
         <div class="box">
           <h3>Help & Support</h3>
-          <a href="#"><i class="fas fa-arrow-right"></i> Ask query </a>
+          <a href="helpsupport.php"><i class="fas fa-arrow-right"></i> Ask query </a>
         </div>
   
       </div>
