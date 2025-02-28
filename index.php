@@ -27,7 +27,7 @@
         <a id="contact-link" href="javascript:void(0);" onclick="openPopup()"
           >CONTACT US</a
         >
-        <a href="helpsupport.php">HELP & SUPPORT</a>
+        <a href="helpsupport.php?ref=home">HELP & SUPPORT</a>
         <span id="date-time"></span>
       </div>
       <div class="nav-bottom">
@@ -305,7 +305,7 @@
         
         <div class="box">
           <h3>Help & Support</h3>
-          <a href="helpsupport.php"><i class="fas fa-arrow-right"></i> Ask query </a>
+          <a href="helpsupport.php?ref=footer"><i class="fas fa-arrow-right"></i> Ask query </a>
         </div>
   
       </div>
